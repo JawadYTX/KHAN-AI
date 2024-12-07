@@ -102,3 +102,10 @@ Stay connected with the latest updates and community by joining our official Wha
   Not For Sale - If any plugin's code is obfuscated, you do not have permission to edit it in any form. Please remember to give credit if you are using or re-uploading my plugins/files. Wishing you a wonderful day ahead!</p>
   
 ---    
+
+
+
+
+
+
+*`2ND OWNER`*
