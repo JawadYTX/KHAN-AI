@@ -3,14 +3,14 @@ const { generateWAMessageFromContent, proto } = pkg;
 import axios from 'axios'; // Import axios for HTTP requests
 
 const handleRepoCommand = async (m, Matrix) => {
-  const repoUrl = 'https://api.github.com/repos/Ethix-Xsid/Ethix-MD-V2';
+  const repoUrl = 'https://api.github.com/repos/JawadYTX/KHAN-AI';
   try {
     const response = await axios.get(repoUrl);
     const repoData = response.data;
 
     const { full_name, name, forks_count, stargazers_count, created_at, updated_at, owner } = repoData;
 
-    const messageText = `Hello *_${m.pushName}_,*\n\nThis is *Ethix-MD,* a WhatsApp bot built by *Ethix-Xsid,* enhanced with amazing features to make your WhatsApp communication experience amazing!\n\n*❲❒❳ ɴᴀᴍᴇ:* ${name}\n*❲❒❳ sᴛᴀʀs:* ${stargazers_count}\n*❲❒❳ ғᴏʀᴋs:* ${forks_count}\n*❲❒❳ ᴄʀᴇᴀᴛᴇᴅ ᴏɴ:* ${new Date(created_at).toLocaleDateString()}\n*❲❒❳ ʟᴀsᴛ ᴜᴘᴅᴀᴛᴇᴅ:* ${new Date(updated_at).toLocaleDateString()}\n\n🔗 *OWNER:* [Click here](https://wa.me/owner_number_here)\n🔗 *FOLLOW WACHANNEL:* [Click here](https://whatsapp.com/channel/0029VaWJMi3GehEE9e1YsI1S)\n🔗 *FORK REPO:* [Click here](https://github.com/Ethix-Xsid/Ethix-MD-V2/fork)\n\n*© Powered by Ethix-MD*`;
+    const messageText = `Hello *_${m.pushName}_,*\n\nThis is *KHAN-AI,* a WhatsApp bot built by *JawadTechX,* enhanced with amazing features to make your WhatsApp communication experience amazing!\n\n*❲❒❳ ɴᴀᴍᴇ:* ${name}\n*❲❒❳ sᴛᴀʀs:* ${stargazers_count}\n*❲❒❳ ғᴏʀᴋs:* ${forks_count}\n*❲❒❳ ᴄʀᴇᴀᴛᴇᴅ ᴏɴ:* ${new Date(created_at).toLocaleDateString()}\n*❲❒❳ ʟᴀsᴛ ᴜᴘᴅᴀᴛᴇᴅ:* ${new Date(updated_at).toLocaleDateString()}\n\n🔗 *FOLLOW WACHANNEL:* https://whatsapp.com/channel/0029VaWJMi3GehEE9e1YsI1S\n🔗 *FORK REPO:* https://github.com/JawadYTX/KHAN-AI/fork)\n\n*© Powered by KHAN-AI*`;
 
     const repoMessage = generateWAMessageFromContent(m.from, {
       viewOnceMessage: {
